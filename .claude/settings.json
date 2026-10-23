@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(./inputs/**)",
+      "Read(./outputs/**)",
+      "Read(./templates/**)",
+      "Read(./docs/**)",
+      "Write(./outputs/**)",
+      "Edit(./outputs/**)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(git commit:*)",
+      "Write(./.github/**)",
+      "mcp__atlassian"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(rm -rf:*)",
+      "Bash(git push --force:*)"
+    ]
+  }
+}
